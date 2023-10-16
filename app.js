@@ -1,14 +1,3 @@
-function moleAppear() {
-  var random = Math.floor(Math.random() * jQuery("img").length);
-  jQuery("img").hide().eq(random).show();
-}
-
-function gameover() {
-  clearInterval(SInterval);
-  clearInterval(timeInterval);
-  $("img").hide();
-}
-
 $(document).ready(function () {
   $("#start").click(function () {
     let time = 30;
@@ -39,3 +28,15 @@ $(document).ready(function () {
     });
   });
 });
+
+function moleAppear() {
+  var random = Math.floor(Math.random() * jQuery("img").length);
+  jQuery("img").hide().eq(random).show();
+}
+
+function gameover() {
+  clearInterval(SInterval);
+  clearInterval(timeInterval);
+  $("img").hide();
+}
+
